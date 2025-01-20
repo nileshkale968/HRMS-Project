@@ -1,6 +1,5 @@
 package com.amigos.entities;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "departments")
+@Table(name = "Departments")
 public class Departments {
 	
 	@Id

@@ -13,7 +13,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "Employees")
 
 public class Employees {
 	
@@ -49,10 +49,11 @@ public class Employees {
 	@Column(name = "MaritalStatus")
 	private String martialStatus;
 	
+	@Column(name = "EmergencyContactName")
+	private String emergencyContactName;
+	
 	@Column(name = "EmergencyContactPhone")
 	private String emergencyContactPhone;
-	
-	
 	
 	@ManyToOne
 	@JoinColumn(name = "DepartmentID")
