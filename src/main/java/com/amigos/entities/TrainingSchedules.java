@@ -40,6 +40,85 @@ public class TrainingSchedules {
 	@Column(name = "MaxParticipants")
 	private int maxParticipants;
 	
+	public TrainingSchedules() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public TrainingSchedules(int scheduleId, TrainingModules trainingmodule, Trainers trainer, LocalDate startDate,
+			LocalDate endDate, String location, int maxParticipants) {
+		super();
+		this.scheduleId = scheduleId;
+		this.trainingmodule = trainingmodule;
+		this.trainer = trainer;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.location = location;
+		this.maxParticipants = maxParticipants;
+	}
+
+	public int getScheduleId() {
+		return scheduleId;
+	}
+
+	public void setScheduleId(int scheduleId) {
+		this.scheduleId = scheduleId;
+	}
+
+	public TrainingModules getTrainingmodule() {
+		return trainingmodule;
+	}
+
+	public void setTrainingmodule(TrainingModules trainingmodule) {
+		this.trainingmodule = trainingmodule;
+	}
+
+	public Trainers getTrainer() {
+		return trainer;
+	}
+
+	public void setTrainer(Trainers trainer) {
+		this.trainer = trainer;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(LocalDate startDate) {
+		this.startDate = startDate;
+	}
+
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(LocalDate endDate) {
+		this.endDate = endDate;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public int getMaxParticipants() {
+		return maxParticipants;
+	}
+
+	public void setMaxParticipants(int maxParticipants) {
+		this.maxParticipants = maxParticipants;
+	}
+
+	@Override
+	public String toString() {
+		return "TrainingSchedules [scheduleId=" + scheduleId + ", trainingmodule=" + trainingmodule + ", trainer="
+				+ trainer + ", startDate=" + startDate + ", endDate=" + endDate + ", location=" + location
+				+ ", maxParticipants=" + maxParticipants + "]";
+	}
+	
 	
 
 }

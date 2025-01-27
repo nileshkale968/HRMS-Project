@@ -22,5 +22,44 @@ public class CandidateProfiles {
 	@JoinColumn(name = "EmployeeID")
 	private Employees employee;
 	
+	
+	public CandidateProfiles() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public CandidateProfiles(int candidateId, Employees employee) {
+		super();
+		this.candidateId = candidateId;
+		this.employee = employee;
+	}
+
+
+	public int getCandidateId() {
+		return candidateId;
+	}
+
+
+	public void setCandidateId(int candidateId) {
+		this.candidateId = candidateId;
+	}
+
+
+	public Employees getEmployee() {
+		return employee;
+	}
+
+
+	public void setEmployee(Employees employee) {
+		this.employee = employee;
+	}
+
+
+	@Override
+	public String toString() {
+		return "CandidateProfiles [candidateId=" + candidateId + ", employee=" + employee + "]";
+	}
+	
+	
 
 }

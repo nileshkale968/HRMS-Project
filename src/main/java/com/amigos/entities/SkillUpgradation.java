@@ -40,5 +40,103 @@ public class SkillUpgradation {
 	@JoinColumn(name = "UpgradedBy")
 	private Employees upgradedBy;
 	
+	
+	public SkillUpgradation() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public SkillUpgradation(int upgradationId, Employees employee, String skillName, int previousSkillLevel,
+			int newSkillLevel, LocalDate upgradationDate, Employees upgradedBy) {
+		super();
+		this.upgradationId = upgradationId;
+		this.employee = employee;
+		this.skillName = skillName;
+		this.previousSkillLevel = previousSkillLevel;
+		this.newSkillLevel = newSkillLevel;
+		this.upgradationDate = upgradationDate;
+		this.upgradedBy = upgradedBy;
+	}
+
+
+	public int getUpgradationId() {
+		return upgradationId;
+	}
+
+
+	public void setUpgradationId(int upgradationId) {
+		this.upgradationId = upgradationId;
+	}
+
+
+	public Employees getEmployee() {
+		return employee;
+	}
+
+
+	public void setEmployee(Employees employee) {
+		this.employee = employee;
+	}
+
+
+	public String getSkillName() {
+		return skillName;
+	}
+
+
+	public void setSkillName(String skillName) {
+		this.skillName = skillName;
+	}
+
+
+	public int getPreviousSkillLevel() {
+		return previousSkillLevel;
+	}
+
+
+	public void setPreviousSkillLevel(int previousSkillLevel) {
+		this.previousSkillLevel = previousSkillLevel;
+	}
+
+
+	public int getNewSkillLevel() {
+		return newSkillLevel;
+	}
+
+
+	public void setNewSkillLevel(int newSkillLevel) {
+		this.newSkillLevel = newSkillLevel;
+	}
+
+
+	public LocalDate getUpgradationDate() {
+		return upgradationDate;
+	}
+
+
+	public void setUpgradationDate(LocalDate upgradationDate) {
+		this.upgradationDate = upgradationDate;
+	}
+
+
+	public Employees getUpgradedBy() {
+		return upgradedBy;
+	}
+
+
+	public void setUpgradedBy(Employees upgradedBy) {
+		this.upgradedBy = upgradedBy;
+	}
+
+
+	@Override
+	public String toString() {
+		return "SkillUpgradation [upgradationId=" + upgradationId + ", employee=" + employee + ", skillName="
+				+ skillName + ", previousSkillLevel=" + previousSkillLevel + ", newSkillLevel=" + newSkillLevel
+				+ ", upgradationDate=" + upgradationDate + ", upgradedBy=" + upgradedBy + "]";
+	}
+	
+	
+	
 
 }

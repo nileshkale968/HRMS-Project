@@ -40,5 +40,101 @@ public class EducationDetails {
 	private BigDecimal gpa;
 	
 	
+	public EducationDetails() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public EducationDetails(int educationId, Employees employee, String degree, String institute, String major,
+			int graduationYear, BigDecimal gpa) {
+		super();
+		this.educationId = educationId;
+		this.employee = employee;
+		this.degree = degree;
+		this.institute = institute;
+		this.major = major;
+		this.graduationYear = graduationYear;
+		this.gpa = gpa;
+	}
+
+
+	public int getEducationId() {
+		return educationId;
+	}
+
+
+	public void setEducationId(int educationId) {
+		this.educationId = educationId;
+	}
+
+
+	public Employees getEmployee() {
+		return employee;
+	}
+
+
+	public void setEmployee(Employees employee) {
+		this.employee = employee;
+	}
+
+
+	public String getDegree() {
+		return degree;
+	}
+
+
+	public void setDegree(String degree) {
+		this.degree = degree;
+	}
+
+
+	public String getInstitute() {
+		return institute;
+	}
+
+
+	public void setInstitute(String institute) {
+		this.institute = institute;
+	}
+
+
+	public String getMajor() {
+		return major;
+	}
+
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
+
+	public int getGraduationYear() {
+		return graduationYear;
+	}
+
+
+	public void setGraduationYear(int graduationYear) {
+		this.graduationYear = graduationYear;
+	}
+
+
+	public BigDecimal getGpa() {
+		return gpa;
+	}
+
+
+	public void setGpa(BigDecimal gpa) {
+		this.gpa = gpa;
+	}
+
+
+	@Override
+	public String toString() {
+		return "EducationDetails [educationId=" + educationId + ", employee=" + employee + ", degree=" + degree
+				+ ", institute=" + institute + ", major=" + major + ", graduationYear=" + graduationYear + ", gpa="
+				+ gpa + "]";
+	}
+	
+	
 
 }
